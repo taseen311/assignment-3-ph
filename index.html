@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisyui + tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google-font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">    
+    <title>assignment 3 ph</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                natural: '#EFEBE3',
+              }
+            }
+          }
+        }
+      </script>
+
+      <style>
+        .font-sora{
+            font-family: "Sora", serif;
+        }
+      </style>
+  
+</head>
+<body>
+    <header class="max-w-screen-xl px-16 mx-auto my-5 bg-gradient-to-t from-[#EFEBE3] to-white">
+        <nav class="flex items-center justify-between">
+            <img src="./c2-assets/logo-header.png" alt="">
+            <div class="flex items-center justify-center gap-10">
+                <h1>Product</h1>
+                <h1>Services</h1>
+                <h1>Contact us</h1>
+            </div> 
+            <div class="flex items-center justify-center gap-3">
+                <img src="./c2-assets/search.png" alt="">
+                <img src="./c2-assets/cart.png" alt=""> 
+                <button class="btn btn-outline btn-accent  text-black h-7 px-10">Login</button>
+                <button class="btn btn-success text-white px-9">Register</button>
+            </div>
+        </nav>
+
+        <section class="my-16">
+            <h4 class="text-center text-4xl font-semibold">Freshness <span class="text-green-600">You Can <br> Count </span> On, Prices You’ll Love!</h4>
+                <p class="text-center my-5 text-gray-800">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+            <img class="mx-auto" src="./c2-assets/hero-vegetables.png" alt="">
+        </section>
+    </header>
+    <main class="max-w-screen-xl  mx-auto ">
+     <section class="my-10">
+      <h2 class="text-green-700 text-2xl font-bold my-7 mx-16">Services</h2>
+          <div class="flex items-center justify-center gap-6"> 
+            <div class="rounded-2xl h-[350px] w-[350px] bg-natural p-9">
+            <div class="mx-20 bg-white w-[130px] h-[130px] rounded-full"><img class=" p-3 " src="./c2-assets/service.png" alt=""></div>
+            <h1 class="text-center font-bold text-2xl my-4">24/7 Services</h1>
+            <p class="text-center">
+              Get round-the-clock medical care with our 24/7 service, ensuring expert assistance anytime you need it. Your health, our priority—day or night!</p>
+    
+          </div>
+          <div class="rounded-2xl h-[350px] w-[350px] bg-natural p-9">
+            <div class="mx-20 bg-white w-[130px] h-[130px] rounded-full"><img class=" p-3 " src="./c2-assets/delivery.png" alt=""></div>
+            <h1 class="text-center font-bold text-2xl my-4">Fast Delivery</h1>
+            <p class="text-center">
+              Get your orders delivered quickly with our fast and reliable service.  Because you deserve the fastest delivery every time!</p>
+    
+          </div>
+          <div class="rounded-2xl h-[350px] w-[350px] bg-natural p-9">
+            <div class="mx-20 bg-white w-[130px] h-[130px] rounded-full"><img class=" p-3 " src="./c2-assets/healthy.png" alt=""></div>
+            <h1 class="text-center font-bold text-2xl my-4">Healthy Products</h1>
+            <p class="text-center">
+              Enjoy the best in nutrition with our range of healthy products.  Choose health, choose quality, choose us!</p>
+        </div>
+      </div>
+
+
+
+      <!-- popular products part -->
+       <section class="bg-natural my-20 py-24">
+        <h2 class="text-3xl text-green-700 font-bold my-7 mx-14">Popular Products</h2>
+        <div class="flex items-center justify-center gap-5 ">
+          <div class="rounded-2xl relative p-8  w-[424px] h-[350px] bg-gradient-to-br from-[#53DB3A] to-green-100 ">
+            <div class="relative">
+              <h1 class="text-3xl font-bold text-white">30% off</h1>
+            <p class="my-3">Discover a world of treats, toys and <br> essentials handpicked for</p>
+            <button class="btn bg-white h-[35px] px-7 text-xl">Buy Now</button>
+            </div>
+            <img class="mx-28 absolute my-[-90px]" src="./c2-assets/vegetable-offer.png" alt="">
+          </div>
+
+
+          <div class="grid grid-cols-3 gap-6">
+            <div class="rounded-xl flex items-center justify-start gap-1 w-[210px] h-[100px] bg-slate-50">
+              <img class="mx-2 bg-natural rounded-xl" src="./c2-assets/onion.png" alt="">
+              <div>
+                <div class="flex items-center justify-start gap-2">
+                  <img src="./c2-assets/star.png" alt="">
+                  <p class="font-semibold">4.5</p>
+                </div>
+                <h1 class="font-semibold">Onion 1 KG</h1>
+                <p class="font-semibold">$39.99</p>
+              </div>
+            </div>
+
+            <div class="rounded-xl flex items-center justify-start gap-1 w-[210px] h-[100px] bg-slate-50">
+              <img class="mx-2 bg-natural rounded-xl" src="./c2-assets/potato.png" alt="">
+              <div>
+                <div class="flex items-center justify-start gap-2">
+                  <img src="./c2-assets/star.png" alt="">
+                  <p class="font-semibold">4.5</p>
+                </div>
+                <h1 class="font-semibold">Potato 1 KG</h1>
+                <p class="font-semibold">$39.99</p>
+              </div>
+            </div>
+
+            <div class="rounded-xl flex items-center justify-start gap-1 w-[210px] h-[100px] bg-slate-50">
+              <img class="mx-2 bg-natural rounded-xl" src="./c2-assets/tomato.png" alt="">
+              <div>
+                <div class="flex items-center justify-start gap-2">
+                  <img src="./c2-assets/star.png" alt="">
+                  <p class="font-semibold">4.5</p>
+                </div>
+                <h1 class="font-semibold">Tomato 500gm</h1>
+                <p class="font-semibold">$39.99</p>
+              </div>
+            </div>
+
+            <div class="rounded-xl flex items-center justify-start gap-1 w-[210px] h-[100px] bg-slate-50">
+              <img class="mx-2 bg-natural rounded-xl" src="./c2-assets/onion.png" alt="">
+              <div>
+                <div class="flex items-center justify-start gap-2">
+                  <img src="./c2-assets/star.png" alt="">
+                  <p class="font-semibold">4.5</p>
+                </div>
+                <h1 class="font-semibold">Onion 1 KG</h1>
+                <p class="font-semibold">$39.99</p>
+              </div>
+            </div>
+
+            <div class="rounded-xl flex items-center justify-start gap-1 w-[210px] h-[100px] bg-slate-50">
+              <img class="mx-2 bg-natural rounded-xl" src="./c2-assets/potato.png" alt="">
+              <div>
+                <div class="flex items-center justify-start gap-2">
+                  <img src="./c2-assets/star.png" alt="">
+                  <p class="font-semibold">4.5</p>
+                </div>
+                <h1 class="font-semibold">Potato 1 KG</h1>
+                <p class="font-semibold">$39.99</p>
+              </div>
+            </div>
+
+            <div class="rounded-xl flex items-center justify-start gap-1 w-[210px] h-[100px] bg-slate-50">
+              <img class="mx-2 bg-natural rounded-xl" src="./c2-assets/tomato.png" alt="">
+              <div>
+                <div class="flex items-center justify-start gap-2">
+                  <img src="./c2-assets/star.png" alt="">
+                  <p class="font-semibold">4.5</p>
+                </div>
+                <h1 class="font-semibold">Tomato 500gm</h1>
+                <p class="font-semibold">$39.99</p>
+              </div>
+            </div>
+
+            <div class="rounded-xl flex items-center justify-start gap-1 w-[210px] h-[100px] bg-slate-50">
+              <img class="mx-2 bg-natural rounded-xl" src="./c2-assets/onion.png" alt="">
+              <div>
+                <div class="flex items-center justify-start gap-2">
+                  <img src="./c2-assets/star.png" alt="">
+                  <p class="font-semibold">4.5</p>
+                </div>
+                <h1 class="font-semibold">Onion 1 KG</h1>
+                <p class="font-semibold">$39.99</p>
+              </div>
+            </div>
+
+            <div class="rounded-xl flex items-center justify-start gap-1 w-[210px] h-[100px] bg-slate-50">
+              <img class="mx-2 bg-natural rounded-xl" src="./c2-assets/tomato.png" alt="">
+              <div>
+                <div class="flex items-center justify-start gap-2">
+                  <img src="./c2-assets/star.png" alt="">
+                  <p class="font-semibold">4.5</p>
+                </div>
+                <h1 class="font-semibold">Tomato 500gm</h1>
+                <p class="font-semibold">$39.99</p>
+              </div>
+            </div>
+
+            <div class="rounded-xl flex items-center justify-start gap-1 w-[210px] h-[100px] bg-slate-50">
+              <img class="mx-2 bg-natural rounded-xl" src="./c2-assets/potato.png" alt="">
+              <div>
+                <div class="flex items-center justify-start gap-2">
+                  <img src="./c2-assets/star.png" alt="">
+                  <p class="font-semibold">4.5</p>
+                </div>
+                <h1 class="font-semibold">Potato 1 KG</h1>
+                <p class="font-semibold">$39.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       </section>
+     </section>
+        
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
