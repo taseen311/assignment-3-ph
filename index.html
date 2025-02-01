@@ -33,15 +33,20 @@
   
 </head>
 <body>
-    <header class="max-w-screen-xl px-16 mx-auto my-5 bg-gradient-to-t from-[#EFEBE3] to-white">
-        <nav class="flex items-center justify-between">
-            <img src="./c2-assets/logo-header.png" alt="">
-            <div class="flex items-center justify-center gap-10">
+    <header class="w-[100%] lg:w-[1400px] max-w-screen-xl px-16 mx-auto my-5 bg-gradient-to-t from-[#EFEBE3] to-white">
+        <nav  class="border-b-2 border-b-cyan-500 md:border-0 flex items-center justify-between">
+          <!-- large screen imgs -->
+            <img class="hidden lg:block" src="./c2-assets/logo-header.png" alt="">
+            <!-- small screen imgs -->
+             <img class="block lg:hidden" src="./c2-assets/logo-sm.png" alt="">
+             <!-- small screen menus -->
+              <img class="h-9 w-9 md:hidden" src="./c2-assets/hamburger.svg" alt="">
+            <div class="hidden lg:flex items-center justify-center gap-10">
                 <h1>Product</h1>
                 <h1>Services</h1>
                 <h1>Contact us</h1>
             </div> 
-            <div class="flex items-center justify-center gap-3">
+            <div class="hidden lg:flex items-center justify-center gap-3">
                 <img src="./c2-assets/search.png" alt="">
                 <img src="./c2-assets/cart.png" alt=""> 
                 <button class="btn btn-outline btn-accent  text-black h-7 px-10">Login</button>
@@ -55,25 +60,67 @@
             <img class="mx-auto" src="./c2-assets/hero-vegetables.png" alt="">
         </section>
     </header>
-    <main class="max-w-screen-xl  mx-auto my-28">
+    <main class="w-[100%] lg:max-w-screen-xl  mx-auto my-28">
+
+       <!-- extra part -->
+       <div class="carousel w-full">
+        <h1 class="text-center text-4xl text-green-700">GET THE BEST EXPERIENCE</h1>
+        <div id="slide1" class="carousel-item relative w-full">
+          <img
+            src="./c2-assets/1.jpg"
+            class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img
+            src="./c2-assets/2.jpg"
+            class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img
+            src="./c2-assets/3.jpg"
+            class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img
+            src="./c2-assets/4.jpg"
+            class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+
      <section class="my-10">
-      <h2 class="text-green-700 text-2xl font-bold my-7 mx-16">Services</h2>
-          <div class="flex items-center justify-center gap-6"> 
-            <div class="rounded-2xl h-[350px] w-[350px] bg-natural p-9">
+      <h2 class="text-green-700 text-2xl font-bold mt-7 mx-16 text-center lg:text-start mb-4 lg:mb-0">Services</h2>
+          <div class=" lg:flex items-center justify-center gap-12"> 
+            <div class="mx-auto lg:mx-0 rounded-2xl h-[350px] w-[350px] bg-natural p-9">
             <div class="mx-20 bg-white w-[130px] h-[130px] rounded-full"><img class=" p-3 " src="./c2-assets/service.png" alt=""></div>
             <h1 class="text-center font-bold text-2xl my-4">24/7 Services</h1>
             <p class="text-center">
               Get round-the-clock medical care with our 24/7 service, ensuring expert assistance anytime you need it. Your health, our priority—day or night!</p>
     
           </div>
-          <div class="rounded-2xl h-[350px] w-[350px] bg-natural p-9">
+          <div class="mx-auto my-10 lg:mx-0 rounded-2xl h-[350px] w-[350px] bg-natural p-9">
             <div class="mx-20 bg-white w-[130px] h-[130px] rounded-full"><img class=" p-3 " src="./c2-assets/delivery.png" alt=""></div>
             <h1 class="text-center font-bold text-2xl my-4">Fast Delivery</h1>
             <p class="text-center">
               Get your orders delivered quickly with our fast and reliable service.  Because you deserve the fastest delivery every time!</p>
     
           </div>
-          <div class="rounded-2xl h-[350px] w-[350px] bg-natural p-9">
+          <div class="mx-auto lg:mx-0 rounded-2xl h-[350px] w-[350px] bg-natural p-9">
             <div class="mx-20 bg-white w-[130px] h-[130px] rounded-full"><img class=" p-3 " src="./c2-assets/healthy.png" alt=""></div>
             <h1 class="text-center font-bold text-2xl my-4">Healthy Products</h1>
             <p class="text-center">
@@ -81,13 +128,16 @@
         </div>
       </div>
 
+     
+ 
 
 
       <!-- popular products part -->
        <section class="bg-natural my-20 py-24">
         <h2 class="text-3xl text-green-700 font-bold my-7 mx-14">Popular Products</h2>
-        <div class="flex items-center justify-center gap-5 ">
-          <div class="rounded-2xl relative p-8  w-[424px] h-[350px] bg-gradient-to-br from-[#53DB3A] to-green-100 ">
+        <div class="lg:flex items-center justify-center ">
+          <div class="mx-auto lg:mx-16 rounded-2xl relative p-8 
+          w-[424px] lg:w-[450px]  h-[350px] bg-gradient-to-br from-[#53DB3A] to-green-100 ">
             <div class="relative">
               <h1 class="text-3xl font-bold text-white">30% off</h1>
             <p class="my-3">Discover a world of treats, toys and <br> essentials handpicked for</p>
@@ -97,7 +147,7 @@
           </div>
 
 
-          <div class="grid grid-cols-3 gap-6">
+          <div class="mx-[50px] lg:mx-0 mt-10 lg:mt-0 grid grid-cols-2 lg:grid-cols-3 gap-7">
             <div class="rounded-xl flex items-center justify-start gap-1 w-[210px] h-[100px] bg-slate-50">
               <img class="mx-2 bg-natural rounded-xl" src="./c2-assets/onion.png" alt="">
               <div>
@@ -194,7 +244,7 @@
               </div>
             </div>
 
-            <div class="rounded-xl flex items-center justify-start gap-1 w-[210px] h-[100px] bg-slate-50">
+            <div class="hidden lg:rounded-xl flex items-center justify-start gap-1 w-[210px] h-[100px] bg-slate-50">
               <img class="mx-2 bg-natural rounded-xl" src="./c2-assets/potato.png" alt="">
               <div>
                 <div class="flex items-center justify-start gap-2">
@@ -216,8 +266,8 @@
 
      <section >
       <h3 class="my-5 text-2xl font-semibold text-green-700 mx-14">Arrivals & Offers</h3>
-       <div class="flex items-center justify-center gap-3">
-        <div class="flex items-center justify-center gap-5  bg-green-800 h-[340px] w-[650px] rounded-xl ">
+       <div class="lg:flex items-center justify-center gap-3">
+        <div class="flex items-center justify-center gap-5  bg-green-800 h-[340px] w-[90%] lg:w-[650px] rounded-xl mx-auto lg:mx-0 ">
           <div >
             <img src="./c2-assets/dawat-logo.png" alt="">
             <button class="btn btn-success btn-sm bg-[#63B76D] text-white px-8 mx-7 my-4">Cook Exotic Dishes</button>
@@ -228,7 +278,7 @@
           </div>
         </div>
 
-        <div class="flex items-center justify-center gap-5 h-[340px] w-[500px] bg-[#102861] rounded-lg">
+        <div class="flex items-center justify-center gap-5 h-[340px] mt-5 lg:mt-0 w-[90%] lg:w-[500px] bg-[#102861] rounded-lg mx-auto lg:mx-0">
           <div>
             <img src="./c2-assets/india-gate-logo.png" alt="">
             <button class="btn btn-success btn-sm bg-[#2A4D97] text-white px-7 my-3">World's No.1 Rice</button>
@@ -245,30 +295,31 @@
 
         
     </main>
-    <footer class="max-w-screen-xl  mx-auto bg-green-700 my-80 relative 
-    h-[500px] ">
+    <footer class="h-[659px] lg:h-[500px] w-[100%] lg:max-w-screen-xl  mx-auto bg-green-700 my-80 relative 
+    ">
          
            <!-- get grocery news -->
-           <section class="w-[1150px] h-[457px] bg-natural mx-16  flex items-center justify-center gap-5 absolute -my-56 rounded-xl">
+           <section class="w-[90%]  lg:w-[1150px]
+            h-auto lg:h-[457px] bg-natural mx-7 lg:mx-16  lg:flex items-center justify-center gap-5 absolute -my-72 lg:-my-56 rounded-xl py-6">
             <div>
-              <img src="./c2-assets/vegetable-busket.png" alt="">
+              <img class="mx-auto lg:mx-0" src="./c2-assets/vegetable-busket.png" alt="">
             </div>
             <div>
-              <h3 class="text-2xl font-semibold">Get Grocery News</h3>
-              <p class="my-3 text-base text-black">Exclusive training tips, ticks, product deals and more.</p>
-              <input class="h-[40px] w-[450px] px-5 rounded-xl mb-4" type="email" name="" id="" placeholder="Enter mail..."> <br>
-              <button class="btn btn-success btn-sm px-8 bg-green-600 text-white">Subscribe</button>
+              <h3 class="text-2xl font-semibold text-center text-green-500 lg:text-start lg:text-black">Get Grocery News</h3>
+              <p class="my-3 text-base text-black text-center lg:text-start">Exclusive training tips, ticks, product deals and more.</p>
+              <input class="ml-20 lg:ml-0 h-[40px] w-[450px] px-5 rounded-xl mb-4" type="email" name="" id="" placeholder="Enter mail..."> <br>
+              <button class="btn btn-success btn-sm px-8 bg-green-600 text-white ml-60">Subscribe</button>
             </div>
           </section> 
 
         <!-- last part -->
           
-            <div class="w-full absolute mt-72 text-white flex items-center justify-between px-16 my-6">
-              <div>
+            <div class="w-full absolute mt-72 text-white lg:flex items-center justify-between px-16 my-6">
+              <div class="mt-3">
                 <img src="./c2-assets/logo-footer.png" alt="">
                 <p>Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
                </div>
-               <div>
+               <div class="my-10 lg:my-0">
                 <a href="#">Product</a> <br>
                 <a class="my-10" href="#">Services</a> <br>
                 <a href="#">Contact us</a> <br>
